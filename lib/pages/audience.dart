@@ -12,7 +12,6 @@ class _AudienceWindowState extends State<AudienceWindow> {
       appBar: AppBar(
         title: Text('Audience'),
       ),
-      
     );
   }
 }
