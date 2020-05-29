@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BroadcastingStatus extends StatefulWidget {
+  final String count;
+  BroadcastingStatus(this.count);
   @override
   _BroadcastingStatusState createState() => _BroadcastingStatusState();
 }
@@ -37,7 +39,7 @@ class _BroadcastingStatusState extends State<BroadcastingStatus> {
             child: Row(
               children: <Widget>[
                 Icon(Icons.remove_red_eye, size: 15,),
-                Text('13')
+                Text(widget.count)
               ],
             ),
           )

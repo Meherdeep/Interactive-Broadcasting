@@ -1,6 +1,7 @@
 import 'package:agora_live_interactive_broadcasting/pages/audience.dart';
 import 'package:agora_live_interactive_broadcasting/pages/broadcaster.dart';
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 enum UserRoles {Audience,Broadcaster}
 class MyHomePage extends StatefulWidget {
@@ -136,9 +137,11 @@ class _MyHomePageState extends State<MyHomePage> {
          check = '';
        });
        if (_isBroadcaster) {
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>BroadcasterWindow()));  
+        await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>BroadcasterWindow(_channelName.text)));  
        } else {
-         Navigator.push(context, MaterialPageRoute(builder: (context)=>AudienceWindow()));
+         await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
+         Navigator.push(context, MaterialPageRoute(builder: (context)=>AudienceWindow(_channelName.text)));
        }
        
      }

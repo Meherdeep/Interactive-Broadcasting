@@ -19,6 +19,10 @@ class _CommentBarState extends State<CommentBar> {
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide(color: Color.fromRGBO(45, 156, 215, 1))
+                          ),
                           hintText: 'Comment'
                         ),
                       ),
@@ -30,7 +34,7 @@ class _CommentBarState extends State<CommentBar> {
                           color: Colors.white70
                         )
                       ),
-                      child: IconButton(icon: Icon(Icons.send, color: Colors.white70,), onPressed: (){}),
+                      child: IconButton(icon: Icon(Icons.send, color: Colors.white70,), onPressed: (){}, splashColor: Color.fromRGBO(45, 156, 215, 1),),
                     )
 
                   ],
