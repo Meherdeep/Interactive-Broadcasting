@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+		INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:3:3-65
+	android:name
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:3:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:4:3-77
+	android:name
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:4:20-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:5:3-79
+	android:name
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:5:20-76
+uses-sdk
+INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+		ADDED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+		INJECTED from /home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml

@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.agora.agorartm" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.INTERNET" />
+7-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:3:3-65
+7-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:3:20-62
+8    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+8-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:4:3-77
+8-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:4:20-74
+9    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+9-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:5:3-79
+9-->/home/m3h3r/noob-stuff/flutter/.pub-cache/hosted/pub.dartlang.org/agora_rtm-0.9.11/android/src/main/AndroidManifest.xml:5:20-76
+10
+11</manifest>
