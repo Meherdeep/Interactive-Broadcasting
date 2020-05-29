@@ -13,4 +13,4 @@ Use this repo to build your own interactivee broadcasting app.
 Go to lib->utils->app_id.dart and paste the app id that you generated. 
 
 # Result
-![Agora Interactive Video Broadcasting](https://photos.app.goo.gl/LexsJx63o4JqrHQA6)
+![](result.gif)
