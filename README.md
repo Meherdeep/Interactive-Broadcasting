@@ -5,10 +5,10 @@ A sample repository made for #LiveCodeSession series on 05/30.
 Use this repo to build your own interactivee broadcasting app. 
 
 ## Pre-requisites 
-> APP ID (Go to console.agora.io to get your own app id)
-> Agora Flutter SDk
-> VS Code or Android Studio
-> Flutte SDK
+ - APP ID (Go to console.agora.io to get your own app id)
+ - Agora Flutter SDK
+ - VS Code or Android Studio
+ - Flutter SDK
 
 ## Getting started
 
