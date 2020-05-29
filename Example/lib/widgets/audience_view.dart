@@ -12,10 +12,7 @@ class AudienceView extends StatefulWidget {
 class _AudienceViewState extends State<AudienceView> {
   static final _users = <int>[];
   final _infoStrings = <String>[];
-  int newUid = 0;
-  int uid2 = 0;
-  int uid3 = 0;
-  int _viewId;
+  int broadcasterUid = 0;
   
 
   @override
@@ -61,7 +58,7 @@ class _AudienceViewState extends State<AudienceView> {
     await AgoraRtcEngine.muteLocalAudioStream(true);
     await AgoraRtcEngine.setChannelProfile(ChannelProfile.LiveBroadcasting);
     await AgoraRtcEngine.setClientRole(ClientRole.Audience);
-    await AgoraRtcEngine.joinChannel(null, widget.channelName, null, uid3);
+    await AgoraRtcEngine.joinChannel(null, widget.channelName, null, broadcasterUid);
   }
 
   /// agora event handlers
@@ -77,7 +74,6 @@ class _AudienceViewState extends State<AudienceView> {
       int elapsed,
     ){
       setState(() {
-        newUid = uid;
         final info = 'onFirstRemoteAudioDecode: ,uid: $uid';
         _infoStrings.add(info);
       });
@@ -89,7 +85,6 @@ class _AudienceViewState extends State<AudienceView> {
       int elapsed,
     ) {
       setState(() {
-        uid2 = uid;
         final info = 'onJoinChannel: $channel, uid: $uid';
         _infoStrings.add(info);
       });
@@ -104,7 +99,7 @@ class _AudienceViewState extends State<AudienceView> {
 
     AgoraRtcEngine.onUserJoined = (int uid, int elapsed) {
       setState(() {
-        uid3 = uid;
+        broadcasterUid = uid;
         final info = 'userJoined: $uid';
         _infoStrings.add(info);
         _users.add(uid);
@@ -143,7 +138,7 @@ class _AudienceViewState extends State<AudienceView> {
         //   AgoraRtcEngine.setupRemoteVideo(_viewId, VideoRenderMode.Fit, uid3);
         //   //AgoraRtcEngine.joinChannel(null, widget.channelName, null, uid3);
         // }),
-        AgoraRenderWidget(uid3),
+        AgoraRenderWidget(broadcasterUid),
         ],      
       ),
     );

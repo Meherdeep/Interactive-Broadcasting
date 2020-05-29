@@ -12,9 +12,7 @@ class BroadcasterView extends StatefulWidget {
 class _BroadcasterViewState extends State<BroadcasterView> {
   static final _users = <int>[];
   final _infoStrings = <String>[];
-  int newUid = 0;
-  int uid2 = 0;
-  int uid3 = 0;
+  int broadcasterUid = 0;
   // Widget _nativeView;
   int _viewId;
   
@@ -78,7 +76,6 @@ class _BroadcasterViewState extends State<BroadcasterView> {
       int elapsed,
     ){
       setState(() {
-        newUid = uid;
         final info = 'onFirstRemoteAudioDecode: ,uid: $uid';
         _infoStrings.add(info);
       });
@@ -90,7 +87,7 @@ class _BroadcasterViewState extends State<BroadcasterView> {
       int elapsed,
     ) {
       setState(() {
-        uid2 = uid;
+        broadcasterUid = uid;
         final info = 'onJoinChannel: $channel, uid: $uid';
         _infoStrings.add(info);
       });
@@ -105,7 +102,6 @@ class _BroadcasterViewState extends State<BroadcasterView> {
 
     AgoraRtcEngine.onUserJoined = (int uid, int elapsed) {
       setState(() {
-        uid3 = uid;
         final info = 'userJoined: $uid';
         _infoStrings.add(info);
         _users.add(uid);
@@ -139,7 +135,7 @@ class _BroadcasterViewState extends State<BroadcasterView> {
     return Container(
       child: AgoraRtcEngine.createNativeView((viewId){
         _viewId = viewId;
-      AgoraRtcEngine.joinChannel(null, widget.channelName, null, uid2);
+      AgoraRtcEngine.joinChannel(null, widget.channelName, null, broadcasterUid);
       AgoraRtcEngine.startPreview();
       AgoraRtcEngine.enableVideo();
       AgoraRtcEngine.setupLocalVideo(_viewId, VideoRenderMode.Fit);
