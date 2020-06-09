@@ -1,6 +1,5 @@
 import 'package:agora_live_interactive_broadcasting/widgets/audience_view.dart';
 import 'package:agora_live_interactive_broadcasting/widgets/broadcasting_status.dart';
-import 'package:agora_live_interactive_broadcasting/widgets/comment.dart';
 import 'package:agora_live_interactive_broadcasting/widgets/rtm.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -48,7 +47,7 @@ class _AudienceWindowState extends State<AudienceWindow> {
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
-                  child: VideoPlayer(_controller),
+                  child: AudienceView(widget.channelName),
                 ),
               ),
             ),

@@ -1,13 +1,12 @@
 import 'package:agora_live_interactive_broadcasting/widgets/broadcaster_view.dart';
 import 'package:agora_live_interactive_broadcasting/widgets/broadcasting_status.dart';
-import 'package:agora_live_interactive_broadcasting/widgets/comment.dart';
 import 'package:agora_live_interactive_broadcasting/widgets/rtm.dart';
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
 
 class BroadcasterWindow extends StatefulWidget {
   final String channelName;
-  BroadcasterWindow(this.channelName);
+  final String userName;
+  BroadcasterWindow(this.channelName, this.userName);
   @override
   _BroadcasterWindowState createState() => _BroadcasterWindowState();
 }
@@ -36,7 +35,7 @@ class _BroadcasterWindowState extends State<BroadcasterWindow> {
               padding: const EdgeInsets.all(8.0),
               child: Align(
                 alignment: Alignment.bottomCenter,
-                child: RealTimeMessaging(widget.channelName),
+                child: RealTimeMessaging(widget.channelName, widget.userName),
               ),
             ),
           ],

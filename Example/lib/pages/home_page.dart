@@ -138,10 +138,10 @@ class _MyHomePageState extends State<MyHomePage> {
        });
        if (_isBroadcaster) {
         await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>BroadcasterWindow(_channelName.text)));  
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>BroadcasterWindow(_channelName.text,_username.text)));  
        } else {
          await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
-         Navigator.push(context, MaterialPageRoute(builder: (context)=>AudienceWindow(_channelName.text)));
+         Navigator.push(context, MaterialPageRoute(builder: (context)=>AudienceWindow(_channelName.text,_username.text)));
        }
        
      }

@@ -6,7 +6,8 @@ import 'package:agora_rtm/agora_rtm.dart';
 
 class RealTimeMessaging extends StatefulWidget {
   final String channelName;
-  RealTimeMessaging(this.channelName);
+  final String userName;
+  RealTimeMessaging(this.channelName, this.userName);
   @override
   _RealTimeMessagingState createState() => _RealTimeMessagingState();
 }
@@ -67,7 +68,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
         });
       }
     };
-    String userId = widget.channelName;
+    String userId = widget.userName;
     await _client.login(null, userId);
         print('Login success: ' + userId);
         setState(() {
@@ -166,7 +167,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
                       child: Container(
                         padding: EdgeInsets.only(left: 5, right: 5),
                         color: Colors.white,
-                        child: _infoStrings[i].startsWith('%')? Text(_infoStrings[i].substring(1), maxLines: 10, overflow: TextOverflow.ellipsis,textAlign: TextAlign.right,style: TextStyle(color: Colors.black), ): Text(_infoStrings[i], maxLines: 10, overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.black),),
+                        child: _infoStrings[i].startsWith('%') ? Text(_infoStrings[i].substring(1), maxLines: 10, overflow: TextOverflow.ellipsis,textAlign: TextAlign.right,style: TextStyle(color: Colors.black),): Text(_infoStrings[i], maxLines: 10, overflow: TextOverflow.ellipsis,textAlign: TextAlign.right,style: TextStyle(color: Colors.black),),
                       ),
                     ),
                   ),
@@ -198,14 +199,14 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
     info = '%'+info;
     print(info);
     setState(() {
-      _infoStrings.insert(0, info);
+      _infoStrings.insert(0,info);
     });
     
   }
   void _log(String info) {
     print(info);
     setState(() {
-      _infoStrings.insert(0, info);
+      _infoStrings.insert(0,info);
     });
   }
 }
