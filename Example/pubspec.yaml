@@ -25,7 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   video_player: ^0.10.5+2
   agora_rtc_engine: 1.0.5
-  permission_handler: ^3.0.0
+  permission_handler: ^5.0.1
   agora_rtm: ^0.9.10
 
 dev_dependencies:

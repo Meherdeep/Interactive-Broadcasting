@@ -21,6 +21,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
 
   AgoraRtmClient _client;
   AgoraRtmChannel _channel;
+  
 
   @override
   void initState() {
@@ -54,6 +55,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
     _client.onMessageReceived = (AgoraRtmMessage message, String peerId) {
       _logPeer("Peer msg: " + peerId + ", msg: " + message.text);
     };
+    
     _client.onConnectionStateChanged = (int state, int reason) {
       print('Connection state changed: ' +
           state.toString() +

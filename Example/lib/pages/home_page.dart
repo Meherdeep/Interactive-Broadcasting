@@ -137,13 +137,19 @@ class _MyHomePageState extends State<MyHomePage> {
          check = '';
        });
        if (_isBroadcaster) {
-        await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
+        await _handleCameraAndMic(Permission.camera);
+        await _handleCameraAndMic(Permission.microphone);
         Navigator.push(context, MaterialPageRoute(builder: (context)=>BroadcasterWindow(_channelName.text,_username.text)));  
        } else {
-         await PermissionHandler().requestPermissions([PermissionGroup.camera,PermissionGroup.microphone]);
+         await _handleCameraAndMic(Permission.camera);
+         await _handleCameraAndMic(Permission.microphone);
          Navigator.push(context, MaterialPageRoute(builder: (context)=>AudienceWindow(_channelName.text,_username.text)));
        }
        
      }
+  }
+  Future<void> _handleCameraAndMic(Permission permission) async {
+    final status = await permission.request();
+    print(status);
   }
 }

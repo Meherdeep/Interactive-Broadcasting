@@ -22,6 +22,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
 
   AgoraRtmClient _client;
   AgoraRtmChannel _channel;
+  
 
   @override
   void initState() {
@@ -68,6 +69,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
         });
       }
     };
+
     String userId = widget.userName;
     await _client.login(null, userId);
         print('Login success: ' + userId);
@@ -187,6 +189,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
       return;
     }
     try {
+      
       await _channel.sendMessage(AgoraRtmMessage.fromText(text));
       _log(text);
       _channelMessageController.clear();

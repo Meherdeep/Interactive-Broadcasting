@@ -2,7 +2,7 @@
 
 A sample repository made for #LiveCodeSession series on 05/30.
 
-Use this repo to build your own interactivee broadcasting app. 
+Use this repo to build your own interactivee broadcasting app. The complete code is present under the Example directory.
 
 ## Pre-requisites 
  - APP ID (Go to console.agora.io to get your own app id)
