@@ -1,20 +1,16 @@
-# Agora live interactive broadcasting
+# agora_interactive_broadcasting
 
-A sample repository made for #LiveCodeSession series on 05/30.
+A new Flutter project.
 
-Use this repo to build your own interactivee broadcasting app. The complete code is present under the Example directory.
+## Getting Started
 
-## Pre-requisites 
- - APP ID (Go to console.agora.io to get your own app id)
- - Agora Flutter SDK
- - VS Code or Android Studio
- - Flutter SDK
+This project is a starting point for a Flutter application.
 
-## Getting started
+A few resources to get you started if this is your first Flutter project:
 
-Go to lib->utils->app_id.dart and paste the app id that you generated.
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-Open main.dart file and build the app. 
-
-## Result
-![](result.gif)
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

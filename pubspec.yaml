@@ -1,5 +1,9 @@
-name: agora_live_interactive_broadcasting
+name: agora_interactive_broadcasting
 description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -14,24 +18,23 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
-  video_player: ^0.10.5+2
-  agora_rtc_engine: 1.0.5
-  permission_handler: ^3.0.0
-  agora_rtm: ^0.9.10
+  cupertino_icons: ^1.0.2
+  agora_rtc_engine: ^3.2.1
+  permission_handler: ^5.1.0+2
+  agora_rtm: ^0.9.14
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -45,10 +48,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-   - assets/logo.png
-   - assets/broadcast_sample.mp4
-  #  - images/a_dot_ham.jpeg
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
