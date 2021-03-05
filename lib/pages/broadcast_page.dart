@@ -165,7 +165,7 @@ class _BroadcastPageState extends State<BroadcastPage> {
             alignment: Alignment.bottomCenter,
             padding: EdgeInsets.only(bottom: 48),
             child: RawMaterialButton(
-              onPressed: _onSwitchCamera,
+              onPressed: _goToChatPage,
               child: Icon(
                 Icons.message_rounded,
                 color: Colors.blueAccent,
